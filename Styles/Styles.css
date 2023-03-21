@@ -1,0 +1,174 @@
+/*-- fondo --*/
+.line{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(70% 0, 80% 0, 38% 100%, 28% 100%);
+    position: fixed;
+    z-index: -1;
+    background-color: rgb(141, 234, 218);
+
+}
+.line2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-color: rgb(141, 234, 218);
+    clip-path: polygon(90% 0, 100% 0, 58% 100%, 48% 100%)
+}
+/*-- navar --*/
+.color{
+    background-color: red;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-contenedor{
+    margin-left: 3.6rem;
+    margin-bottom: 1rem;
+}
+.logo{
+    margin-top: .4rem ;
+    height: 3rem; 
+}
+.menu-item{
+    color: #424242;
+    font-size: 18px;
+    margin-right: 2.3rem;
+}
+.menu-item li{
+    margin: 0 .6rem;
+    margin-bottom: .8rem;
+}
+.menu-item li a{
+    padding: 0;
+}
+.user{
+    margin-bottom: .6rem;
+    padding-right: .3rem;
+}
+.user-circulo{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.menu-item li a:hover{
+    text-decoration-color: rgb(97, 195, 179);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.menu-item li .white:hover{
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.color-nav button{
+    border: none;
+}
+.color-nav button::activite{
+    border: none;
+}
+/*--  body --*/
+.contenedor{
+    width: 86%;
+    height: 68vh;
+    margin: 20px auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 6fr 4.3fr;
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    grid-template-areas: 
+    "left right";
+}
+.left{
+    grid-area: left;
+    margin-left: 3rem;
+}
+.left .button{
+    display: flex;
+    margin-top: 3rem;
+}
+.left .button a button{
+    height: 4rem;
+    width: 14rem;
+    border-radius: 10rem;
+    border: none;
+    color: #424242;
+    font-weight: bolder;
+    background-color: rgb(141, 234, 218);
+    font-size: 1.2rem;
+}
+.left .button a button:hover{
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: rgb(90, 230, 206);
+}
+.left .button p{
+    margin: 1.2rem 0 0 4rem;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto-inicio .Titulo-index{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: #000000;
+}
+.container .texto-inicio{
+   overflow: hidden;
+   width: 60%;
+}
+.imagen-promocional img{
+    width: 92%;
+}
+.texto-inicio .texto{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+/*--  footer --*/
+.footer-item li a img{
+    width: 2rem;
+    opacity: .5;
+}
+.footer-item li a img:hover{
+    opacity: 1;
+}
+@media only screen and (max-width: 900px){
+    /*--  body --*/
+    .contenedor{
+        grid-template-columns: auto;
+        height: auto;
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        grid-template-areas: 
+        "right"
+        "left";
+    }
+    .imagen-promocional img{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 4rem;
+    }
+    .left{
+        margin-left: 6rem;
+    }
+    .line{
+        clip-path: polygon(70% 0, 80% 0, 16% 100%, 6% 100%);
+        position: fixed;
+        z-index: -1;
+    
+    }
+    .line2{
+        z-index: -1;
+        clip-path: polygon(90% 0, 100% 0, 36% 100%, 26% 100%)
+    }
+    .left .button a button{
+        background-color: rgb(201, 248, 239);
+    }
+    .left .button a button:hover{
+        background-color: rgb(79, 224, 200);
+    }
+}
