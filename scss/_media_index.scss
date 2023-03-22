@@ -1,0 +1,41 @@
+@media only screen and (max-width: 900px){
+    /*--  body --*/
+    .contenedor{
+        grid-template-columns: auto;
+        height: auto;
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        grid-template-areas: 
+        "right"
+        "left";
+    }
+    .imagen-promocional{
+        img{
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 4rem;
+        }
+    }
+    .left{
+        margin-left: 6rem;
+        .button{
+            a{
+                button{
+                    background-color: rgb(201, 248, 239);
+                    &:hover{
+                        background-color: rgb(79, 224, 200);
+                    }
+                }
+            }
+        }
+    }
+    .line{
+        clip-path: polygon(70% 0, 80% 0, 16% 100%, 6% 100%);
+        position: fixed;
+        z-index: -1;
+    }
+    .line2{
+        z-index: -1;
+        clip-path: polygon(90% 0, 100% 0, 36% 100%, 26% 100%)
+    }
+}
