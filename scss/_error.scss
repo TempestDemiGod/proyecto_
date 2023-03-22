@@ -1,0 +1,40 @@
+.grid{
+    width: 100%;
+    height: 40rem;
+    margin: 20px auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-rows: repeat(1);
+    gap: 10px;
+    grid-template-areas: 
+    "left center right";
+    overflow: hidden;
+    .left{
+        grid-area: left;
+        margin-left: 3rem;
+        height: 40rem;
+        img{
+            height: 100%;
+        }
+    }
+    .center{
+        grid-area: center;
+        margin-left: 3rem;
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 4rem;
+        }
+        h2{
+            color: gray;
+        }
+        h3{
+            font-size: 2rem;
+            color: #424242;
+        }
+    }
+    .right{
+        grid-area: right;
+        margin-left: 3rem;
+    }
+}
