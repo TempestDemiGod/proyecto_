@@ -1,0 +1,171 @@
+
+nav .menu{
+    position: relative;
+   left: 16rem; 
+}
+.texto-inicio .Titulo,.Titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+.container{
+    width: 80%;
+    margin: 4rem auto;
+    height: 30rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.imagen-promocional{
+    width: 40%;
+    overflow: hidden;
+}
+.circle-big{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 4rem;
+    background-color: rgb(126, 189, 241);
+    z-index: -1;
+    border-radius: 50%;
+}
+.circle-small{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 22rem;
+    bottom: 8rem;
+    background-color: rgb(133, 187, 244);
+    z-index: -1;
+    border-radius: 50%;
+}
+.line-row{
+    width: 70%;
+    height: 6rem;
+    top: 19rem;
+    background-color: rgb(126, 189, 241);
+    position: absolute;
+    z-index: -1;
+}
+.patrocinios{
+    margin-top: 8rem;
+    background-color: #F7F4E7;
+    display: flex;
+}
+.patrocinios .caja{
+    width: 80%;
+    margin: 3rem auto;
+}
+.marcas{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+}
+.marca{
+    width: 12rem;
+    height: 16rem; 
+    opacity: .4;
+    
+}
+.marca img{
+    display: flex;
+    margin: 0 auto;
+    width: 10rem;
+}
+.marcas a{
+    text-decoration: none;
+}
+.marca:hover{
+    opacity: 1;
+}
+.videos .Titulo{
+    padding: 3rem 0;
+    background-color: #424242;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.videos .marca-video{
+    width: 90%;
+    height: 46rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nombre-marca{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #424242;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+}
+.videos{
+    background: rgb(166, 203, 212);
+}
+.marca .nike{
+    display: flex;
+    margin: 0 auto;
+    width: 13.3rem;
+}
+.marca .vans{
+    display: flex;
+    margin: 0 auto;
+    width: 10.7rem;
+}
+.marca-video video{
+    height: 20rem;
+    width: 50%;
+}
+.texto-white{
+    height: 80%;
+    position: relative;
+    width: 40%;
+}
+.left{
+    right: 3rem;
+}
+.right{
+    left: 3rem;
+}
+.texto-white h2{
+    color: white;
+    width: 44%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin: 2rem auto;
+}
+.texto-white p{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 6rem;
+}
+.numero-volador{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    right: 7rem;
+    top: 16rem;
+    color: white;
+    z-index: -1;
+    font-size: 12rem;
+}
+.numero-deportista{
+    position: absolute;
+    width: 7rem;
+    z-index: -1;
+    height: 1.5rem;
+    background-color: rgb(126, 189, 241);
+    right: 11rem;
+    top: 21.5rem;
+}
+@media only screen and (max-width: 1000px){
+    .patrocinios{
+        overflow-x: hidden;
+    }
+    .marcas{
+        overflow-x: scroll;
+    }
+}

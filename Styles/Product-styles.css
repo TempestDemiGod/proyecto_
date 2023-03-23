@@ -1,0 +1,253 @@
+.grid{
+    width: 80%;
+    margin: 20px auto;
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1,auto);
+    grid-template-areas: 
+    "left right"
+    "list";
+    margin-bottom: 10rem;
+}
+.img-main{
+    height: 100%;
+}
+.listado-producto{
+    grid-area: list;
+}
+/*--- main product ---*/
+.p-text-main{
+    grid-area: left;
+}
+.p-img-main{
+    grid-area: right;
+}
+.p-producto-principal{
+    background-color: #6060ED;
+    height: 30rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.p-line-interior{
+    height: 2rem;
+    top:46%;
+    width: 30%;
+    position: absolute;
+    background-color: white;
+    right: -6.5rem;
+}
+.p-imagen-principal img{
+    width: 110%;
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+}
+.p-circulo-interior{
+    height: 20.6rem;
+    width: 20.6rem;
+    background-color: #6060ED;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 12%;
+    margin-left: 12%;
+    opacity: .4;
+}
+.p-imagen-principal{
+    background-color: #ffffff;
+    width: 26rem;
+    height: 26.7rem;
+    border-radius: 50%;
+    position: relative;
+    right: 1.6rem;
+}
+.p-contenido{
+    width: 70%;
+    padding-left: 4rem;
+}
+.p-contenido h3,.p-contenido .p-precio-contenerdor{
+    width: 90%;
+    margin-left: 10%;
+}
+.p-contenido .p-precio-contenerdor{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.p-texto-producto{
+    margin-top: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+.p-boton-inicio,.p-precio-contenerdor h4{
+    width: 50%;
+}
+.p-contenido .p-titulo{
+    font-size: 3.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.p-button-principal-producto{
+    background-color: #88ccf3;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    height: 4rem;
+    width: 14rem;
+    border-radius: 6rem;
+    border: none;
+}
+.p-button-principal-producto:hover{
+    background-color: #ffffff;
+    color: #6060ED;
+    font-size: 2rem;
+}
+@media only screen and (max-width: 1000px){
+    /*--- main product ---*/
+    .grid{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        height: auto;
+        grid-template-areas: 
+        "right"
+        "left";
+    }
+    .p-producto-principal{
+        display: grid;
+    }
+    .p-img-main{
+        margin: 0 25%;
+        margin-top: 4rem;
+        margin-bottom: 12rem;
+    }
+    .p-text-main{
+        margin-left: 6%;
+        margin-bottom: 4rem;
+    }
+    .p-line-interior{
+        width: 2rem;
+        height: 16%;
+        top: -4rem;
+        position: relative;
+        margin: 0 24%;
+        background-color: white;
+
+    }
+}
+.container-products{
+    width: 80%;
+    margin: 0 auto;
+}
+/*----------------------------*/
+hr{
+    margin-top: 8rem;
+    border: px black solid;
+}
+.listado-producto{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.caja-producto{
+    background-color: #6b9cf6;
+    width: 90%;
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 2rem 2rem;
+}
+.caja-producto img{
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.texto-producto-producto{
+    color: white;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem 0;
+}
+.precio-caja{
+    display: flex;
+    align-items: center;
+}
+.precio{
+    width: 50%;
+    font-size: 2rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.precio-caja button{
+    position: relative;
+    width: 60%;
+    background-color: #a0d4f4;
+    font-size: 1.6rem;
+    color: #6b9cf6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.precio-caja button:hover{
+    font-weight: normal;
+    background-color: white;
+}
+.listado-producto{
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e h";
+    margin-bottom: 10rem;
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.h{
+    grid-area: h;
+}
+@media only screen and (max-width: 1000px){
+    .listado-producto{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "h";
+        margin-bottom: 10rem;
+    }
+    .caja-producto{
+        width: 100%;
+    }
+    .h-caja-producto {
+        margin-bottom: -2rem;
+    }
+}
