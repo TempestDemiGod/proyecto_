@@ -141,51 +141,29 @@ textarea{
 .grid{
     width: 100%;
     margin: 0 auto;
-    height: auto;
+    height: 40rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 6fr 4fr;
-    grid-template-rows: repeat(1,auto);
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: repeat(1);
     grid-template-areas: 
     "imagen info";
     margin-bottom: 10rem;
+    div{
+        .info{
+            grid-area: info;
+            width: 100rem;
+        }
+    }
+    img{
+        .imagenTitulo{
+            grid-area: imagen;
+            height: 3rem;
+        }
+    }
 }
 .container-contacto{
     padding-top: 4rem;
-}
-.imagenTitulo{
-    grid-area: imagen;
-    width: 100%;
-}
-.info{
-    grid-area: info;
-}
-@media only screen and (max-width: 1000px){
-    .grid{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2,auto);
-        grid-template-areas: 
-        "imagen"
-        "info";
-    } 
-    .titulo-contacto {
-        color: #57E39F;
-        position: relative;
-        left: 1rem;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 4rem;
-        margin-top: 6rem;
-    }
-    .texto-contacto {
-        position: relative;
-        color: white;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 1.4rem;
-        width: 90%;
-        margin-top: 1rem;
-        margin-bottom: 3.4rem;
-        left: 3rem;
-    }
 }
 body{
     height: auto;
@@ -253,5 +231,32 @@ body{
         input {
             width: 96%;
         }
+    }
+}
+@media only screen and (max-width: 1000px){
+    .grid{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: 
+        "imagen"
+        "info";
+    } 
+    .titulo-contacto {
+        color: #57E39F;
+        position: relative;
+        left: 1rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 4rem;
+        margin-top: 6rem;
+    }
+    .texto-contacto {
+        position: relative;
+        color: white;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.4rem;
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 3.4rem;
+        left: 3rem;
     }
 }

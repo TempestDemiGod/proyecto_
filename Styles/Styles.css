@@ -50,98 +50,6 @@
   .footer-item li a img:hover {
     opacity: 1; }
 
-.line {
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(70% 0, 80% 0, 38% 100%, 28% 100%);
-  position: fixed;
-  z-index: -1;
-  background-color: #8deada; }
-
-.line2 {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-  background-color: #8deada;
-  clip-path: polygon(90% 0, 100% 0, 58% 100%, 48% 100%); }
-
-.contenedor {
-  width: 86%;
-  height: 68vh;
-  margin: 20px auto;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 6fr 4.3fr;
-  grid-template-rows: repeat(1, auto);
-  gap: 10px;
-  grid-template-areas: "left right"; }
-
-.left {
-  grid-area: left;
-  margin-left: 3rem; }
-  .left .button {
-    display: flex;
-    margin-top: 3rem; }
-    .left .button a button {
-      height: 4rem;
-      width: 14rem;
-      border-radius: 10rem;
-      border: none;
-      color: #424242;
-      font-weight: bolder;
-      background-color: #8deada;
-      font-size: 1.2rem; }
-      .left .button a button:hover {
-        color: #ffffff;
-        font-size: 1.3rem;
-        background-color: #5ae6ce; }
-    .left .button p {
-      margin: 1.2rem 0 0 4rem;
-      font-size: 1.4rem;
-      font-family: Arial, Helvetica, sans-serif; }
-
-.container .texto-inicio {
-  overflow: hidden;
-  width: 60%; }
-  .container .texto-inicio .Titulo-index {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 16rem;
-    color: #000000;
-    font-weight: bolder; }
-  .container .texto-inicio .texto {
-    margin: 20px 0;
-    font-size: 20px; }
-
-.imagen-promocional img {
-  width: 92%; }
-
-@media only screen and (max-width: 900px) {
-  /*--  body --*/
-  .contenedor {
-    grid-template-columns: auto;
-    height: auto;
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    grid-template-areas: "right" "left"; }
-  .imagen-promocional img {
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 4rem; }
-  .left {
-    margin-left: 6rem; }
-    .left .button a button {
-      background-color: #c9f8ef; }
-      .left .button a button:hover {
-        background-color: #4fe0c8; }
-  .line {
-    clip-path: polygon(70% 0, 80% 0, 16% 100%, 6% 100%);
-    position: fixed;
-    z-index: -1; }
-  .line2 {
-    z-index: -1;
-    clip-path: polygon(90% 0, 100% 0, 36% 100%, 26% 100%); } }
-
 /*----------------*/
 .left {
   right: 3rem; }
@@ -274,45 +182,22 @@ textarea {
 .grid {
   width: 100%;
   margin: 0 auto;
-  height: auto;
+  height: 40rem;
   display: grid;
   align-items: center;
-  grid-template-columns: 6fr 4fr;
-  grid-template-rows: repeat(1, auto);
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: repeat(1);
   grid-template-areas: "imagen info";
   margin-bottom: 10rem; }
+  .grid div .info {
+    grid-area: info;
+    width: 100rem; }
+  .grid img .imagenTitulo {
+    grid-area: imagen;
+    height: 3rem; }
 
 .container-contacto {
   padding-top: 4rem; }
-
-.imagenTitulo {
-  grid-area: imagen;
-  width: 100%; }
-
-.info {
-  grid-area: info; }
-
-@media only screen and (max-width: 1000px) {
-  .grid {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "imagen" "info"; }
-  .titulo-contacto {
-    color: #57E39F;
-    position: relative;
-    left: 1rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4rem;
-    margin-top: 6rem; }
-  .texto-contacto {
-    position: relative;
-    color: white;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 1.4rem;
-    width: 90%;
-    margin-top: 1rem;
-    margin-bottom: 3.4rem;
-    left: 3rem; } }
 
 body {
   height: auto;
@@ -371,6 +256,28 @@ body {
   .lad-izq input {
     width: 96%; } }
 
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "imagen" "info"; }
+  .titulo-contacto {
+    color: #57E39F;
+    position: relative;
+    left: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    margin-top: 6rem; }
+  .texto-contacto {
+    position: relative;
+    color: white;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1.4rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 3.4rem;
+    left: 3rem; } }
+
 .grid {
   width: 100%;
   height: 40rem;
@@ -402,3 +309,95 @@ body {
   .grid .right {
     grid-area: right;
     margin-left: 3rem; }
+
+.line {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(70% 0, 80% 0, 38% 100%, 28% 100%);
+  position: fixed;
+  z-index: -1;
+  background-color: #8deada; }
+
+.line2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background-color: #8deada;
+  clip-path: polygon(90% 0, 100% 0, 58% 100%, 48% 100%); }
+
+.contenedor {
+  width: 86%;
+  height: 68vh;
+  margin: 20px auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 4.3fr;
+  grid-template-rows: repeat(1, auto);
+  gap: 10px;
+  grid-template-areas: "left right"; }
+
+.left {
+  grid-area: left;
+  margin-left: 3rem; }
+  .left .button {
+    display: flex;
+    margin-top: 3rem; }
+    .left .button a button {
+      height: 4rem;
+      width: 14rem;
+      border-radius: 10rem;
+      border: none;
+      color: #424242;
+      font-weight: bolder;
+      background-color: #8deada;
+      font-size: 1.2rem; }
+      .left .button a button:hover {
+        color: #ffffff;
+        font-size: 1.3rem;
+        background-color: #5ae6ce; }
+    .left .button p {
+      margin: 1.2rem 0 0 4rem;
+      font-size: 1.4rem;
+      font-family: Arial, Helvetica, sans-serif; }
+
+.container .texto-inicio {
+  overflow: hidden;
+  width: 60%; }
+  .container .texto-inicio .Titulo-index {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16rem;
+    color: #000000;
+    font-weight: bolder; }
+  .container .texto-inicio .texto {
+    margin: 20px 0;
+    font-size: 20px; }
+
+.imagen-promocional img {
+  width: 92%; }
+
+@media only screen and (max-width: 900px) {
+  /*--  body --*/
+  .contenedor {
+    grid-template-columns: auto;
+    height: auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    grid-template-areas: "right" "left"; }
+  .imagen-promocional img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 4rem; }
+  .left {
+    margin-left: 6rem; }
+    .left .button a button {
+      background-color: #c9f8ef; }
+      .left .button a button:hover {
+        background-color: #4fe0c8; }
+  .line {
+    clip-path: polygon(70% 0, 80% 0, 16% 100%, 6% 100%);
+    position: fixed;
+    z-index: -1; }
+  .line2 {
+    z-index: -1;
+    clip-path: polygon(90% 0, 100% 0, 36% 100%, 26% 100%); } }
